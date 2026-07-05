@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Sophia Question Copier",
+  "version": "1.1",
+  "description": "Copies the current Sophia quiz question and answer choices to the clipboard as minimal plain text.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.sophia.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "copy-question": {
+      "suggested_key": { "default": "Alt+Q" },
+      "description": "Copy the current question"
+    }
+  }
+}
