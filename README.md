@@ -23,19 +23,28 @@ It supports both Sophia quiz layouts:
 
 If it can't find a question on the page, it shows a small "No question found" toast instead of copying.
 
-## Install (from source)
+## Install (no git needed)
 
-Chrome can't install unpacked extensions from a `.zip`, so you load the folder directly:
+Easiest way — grab the packaged ZIP:
 
-1. **Download the code** — either clone the repo:
-   ```bash
-   git clone https://github.com/vanyanv/sophia-copy.git
-   ```
-   or click **Code → Download ZIP** on GitHub and unzip it.
-2. Open Chrome and go to `chrome://extensions`.
-3. Turn on **Developer mode** (toggle in the top-right corner).
-4. Click **Load unpacked**.
-5. Select the `sophia-copy` folder (the one containing `manifest.json`).
+1. Go to the **[latest release](https://github.com/vanyanv/sophia-copy/releases/latest)** and download **`sophia-copy.zip`**.
+2. Unzip it — you'll get a `sophia-copy` folder.
+3. Open Chrome and go to `chrome://extensions`.
+4. Turn on **Developer mode** (toggle in the top-right corner).
+5. Click **Load unpacked**.
+6. Select the unzipped `sophia-copy` folder (the one containing `manifest.json`).
+
+> Keep the unzipped folder somewhere permanent — Chrome loads the extension from that folder, so deleting it removes the extension.
+
+<details>
+<summary>Alternative: install from source with git</summary>
+
+```bash
+git clone https://github.com/vanyanv/sophia-copy.git
+```
+
+Then follow steps 3–6 above, selecting the cloned `sophia-copy` folder.
+</details>
 
 The extension is now installed. It runs automatically on any `sophia.org` page.
 
